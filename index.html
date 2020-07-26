@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="to-do">
+            <div class="app-head">
+                <h1>To Do</h1>
+                <span id="refresh" onclick="deleteAll()"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+            </div>
+            <div class="app-body">
+                <ul id="list">
+                    
+                </ul>
+            </div>
+            <div class="app-foot">
+                <input type="text" id="text-box" placeholder="What do you want to do?">
+                <i class="fa fa-plus" onclick="addItem()"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

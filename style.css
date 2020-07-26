@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+.container{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.to-do{
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    min-height: 50%;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    box-shadow: 1px 1px 9px rgba(15, 15, 15, 0.200);
+}
+
+.fa{
+    cursor: pointer;
+    color: rgb(198, 198, 199);
+}
+
+.fa:hover{
+    color: rgb(66, 161, 255);
+}
+
+.fa-trash:hover{
+    color: #ff0000;
+}
+
+.fa-check-circle{
+    color: rgb(0, 202, 0);
+}
+
+.hide{
+    display: none;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-head{
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgb(74, 126, 128);
+    border-bottom: 1px solid #dadce0;
+}
+
+.app-body{
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.app-body, li input{
+    font-size: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul .fa{
+    padding: 5px;
+    font-size: 17px;
+}
+
+li{
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px solid rgb(218, 220, 224, 0.3);
+}
+
+li .al-rt{
+    float: right;
+    margin-left: 7px;
+}
+
+.update-box{
+    border-color: transparent;
+}
+
+.update-box:focus{
+    outline: none;
+}
+
+.app-foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 5px;
+    border-top: 1px solid #dadce0;
+}
+
+.app-foot input{
+    width: 90%;
+    padding: 6px;
+    border: 1px solid #dadce0;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+.app-foot .fa{
+    padding: 5px 7px;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .to-do{
+        min-width: 60%;
+        min-height: 50%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .to-do{
+        min-width: 80%;
+        min-height: 60%;
+    }
+}
